@@ -1,0 +1,76 @@
+District,HASC,Pop-2011,Pop-2001,Pop-1991,Pop-1981,Area(km.ý),Capital,Sec,Zone
+Achham,NP.SP.AC,"257477","231,285","198,188","185,212","1,680",Mangalsen,H,Seti
+Arghakhanchi,NP.PM.AR,"197632","208,391","180,884","157,304","1,193",Sandhikharka,H,Lumbini
+Baglung,NP.PM.BG,"268613","268,937","232,486","215,228","1,784",Baglung,H,Dhawalagiri
+Baitadi,NP.SP.BT,"250898","234,418","200,716","179,136","1,519",Baitadi,H,Mahakali
+Bajhang,NP.SP.BH,"195159","167,026","139,092","124,010","3,422",Chainpur,M,Seti
+Bajura,NP.SP.BU,"134912","* 108,781","92,010","74,649","2,188",Martadi,M,Seti
+Banke,NP.MP.BN,"491313","385,840","285,604","205,323","2,337",Nepalganj,T,Bheri
+Bara,NP.MM.BA,"687708","559,135","415,718","318,957","1,190",Kalaiya,T,Narayani
+Bardiya,NP.MP.BR,"426576","382,649","290,313","199,044","2,025",Gularia,T,Bheri
+Bhaktapur,NP.MM.BK,"304651","225,461","172,952","159,767",119,Bhaktapur,H,Bagmati
+Bhojpur,NP.PW.BJ,"182459","203,018","198,784","192,689","1,507",Bhojpur,H,Kosi
+Chitwan,NP.MM.CH,"579984","472,048","354,488","259,571","2,218",Bharatpur,T,Narayani
+Dadeldhura,NP.SP.DD,"142094","126,162","104,647","86,853","1,538",Dadeldhura,H,Mahakali
+Dailekh,NP.MP.DL,"261770","225,201","187,400","166,527","1,502",Dailekh,H,Bheri
+Dang Deokhuri,NP.MP.DA,"552583","462,380","354,413","266,393","2,955",Ghorahi,T,Rapti
+Darchula,NP.SP.DR,"133274","121,996","101,683","90,218","2,322",Darchula,M,Mahakali
+Dhading,NP.MM.DH,"336067","338,658","278,068","243,401","1,926",Dhadingbesi,H,Bagmati
+Dhankuta,NP.PW.DK,"163412","166,479","146,386","129,781",891,Dhankuta,H,Kosi
+Dhanusa,NP.MM.DN,"754777","671,364","543,672","432,569","1,180",Janakpur,T,Janakpur
+Dolakha,NP.MM.DO,"186557","* 204,229","173,236","150,576","2,191",Charikot,M,Janakpur
+Dolpa,NP.MP.DP,"36700","* 29,545","25,013","22,043","7,889",Dunai,M,Karnali
+Doti,NP.SP.DT,"211746","207,066","167,168","153,135","2,025",Dipayal,H,Seti
+Gorkha,NP.PM.GO,"271061","288,134","252,524","231,294","3,610",Gorkha,H,Gandaki
+Gulmi,NP.PM.GU,"280160","296,654","266,331","238,113","1,149",Tamghas,H,Lumbini
+Humla,NP.MP.HU,"50858","40,595","34,383","20,303","5,655",Simikot,M,Karnali
+Ilam,NP.PW.IL,"290254","282,806","229,214","178,356","1,703",Ilam,H,Mechi
+Jajarkot,NP.MP.JA,"171304","134,868","113,958","99,312","2,230",Jajarkot,H,Bheri
+Jhapa,NP.PW.JH,"812650","* 688,109","593,737","479,743","1,606",Chandragadhi,T,Mechi
+Jumla,NP.MP.JU,"108921","* 89,427","75,964","68,797","2,531",Jumla,M,Karnali
+Kailali,NP.SP.KL,"775709","616,697","417,891","257,905","3,235",Dhangadhi,T,Seti
+Kalikot,NP.MP.KK,"136948","* 105,580","88,805","87,638","1,741",Manma,M,Karnali
+Kanchanpur,NP.SP.KN,"451248","377,899","257,906","168,971","1,610",Mahendranagar,T,Mahakali
+Kapilvastu,NP.PM.KP,"571936","481,976","371,778","270,045","1,738",Taulihawa,T,Lumbini
+Kaski,NP.PM.KS,"492098","380,527","292,945","221,272","2,017",Pokhara,H,Gandaki
+Kathmandu,NP.MM.KT,"1744240","1,081,845","675,341","422,237",395,Kathmandu,H,Bagmati
+Kavrepalanchok,NP.MM.KV,"381937","385,672","324,329","307,150","1,396",Dhulikhet,H,Bagmati
+Khotang,NP.PW.KH,"206312","231,385","215,965","212,571","1,591",Diktel,H,Sagarmatha
+Lalitpur,NP.MM.LL,"468132","337,785","257,086","184,341",385,Patan,H,Bagmati
+Lamjung,NP.PM.LM,"167724","177,149","153,697","152,720","1,692",Besisahar,H,Gandaki
+Mahottari,NP.MM.MH,"627580","553,481","440,146","361,054","1,002",Jaleswor,T,Janakpur
+Makwanpur,NP.MM.MK,"420477","392,604","314,599","243,411","2,426",Hetauda,H,Narayani
+Manang,NP.PM.MN,"6538","9,587","5,363","7,021","2,246",Chame,M,Gandaki
+Morang,NP.PW.MO,"965370","843,220","674,823","534,692","1,855",Biratnagar,T,Kosi
+Mugu,NP.MP.MG,"55286","* 43,937","36,364","43,705","3,535",Gamgadhi,M,Karnali
+Mustang,NP.PM.MS,"13452","14,981","14,292","12,930","3,573",Jomosom,M,Dhawalagiri
+Myagdi,NP.PM.MY,"113641","114,447","100,552","96,904","2,297",Beni,H,Dhawalagiri
+Nawalparasi,NP.PM.NA,"643508","562,870","436,217","308,828","2,162",Parasi,T,Lumbini
+Nuwakot,NP.MM.NU,"277471","288,478","245,260","202,976","1,121",Bidur,H,Bagmati
+Okhaldhunga,NP.PW.OK,"147984","156,702","139,457","137,640","1,074",Okhaldhunga,H,Sagarmatha
+Palpa,NP.PM.PL,"261180","268,558","236,313","214,442","1,373",Tansen,H,Lumbini
+Panchthar,NP.PW.PN,"191817","202,056","175,206","153,746","1,241",Panchthar,H,Mechi
+Parbat,NP.PM.PB,"146590","157,826","143,547","128,400",494,Kusma,H,Dhawalagiri
+Parsa,NP.MM.PR,"601017","497,219","372,524","284,338","1,353",Birganj,T,Narayani
+Pyuthan,NP.MP.PY,"228102","212,484","175,469","157,669","1,309",Pyuthan,H,Rapti
+Ramechhap,NP.MM.RM,"202646","212,408","188,064","161,445","1,546",Ramechhap,H,Janakpur
+Rasuwa,NP.MM.RS,"43300","44,731","36,744","30,241","1,544",Dhunche,M,Bagmati
+Rautahat,NP.MM.RT,"686722","545,132","414,005","332,526","1,126",Gaur,T,Narayani
+Rolpa,NP.MP.RO,"224506","210,004","179,621","168,166","1,879",Livang,H,Rapti
+Rukum,NP.MP.RK,"208567","188,438","153,554","132,432","2,877",Jumlikhalanga,H,Rapti
+Rupandehi,NP.PM.RP,"880196","708,419","522,150","379,096","1,360",Siddharthanagar,T,Lumbini
+Salyan,NP.MP.SL,"242444","* 213,500","181,785","152,063","1,462",Salyan,H,Rapti
+Sankhuwasabha,NP.PW.SS,"158742","159,203","141,903","129,414","3,480",Khadbari,M,Kosi
+Saptari,NP.PW.ST,"639284","570,282","465,668","379,055","1,363",Rajbiraj,T,Sagarmatha
+Sarlahi,NP.MM.SA,"769729","635,701","492,798","398,766","1,259",Malangwa,T,Janakpur
+Sindhuli,NP.MM.SI,"296192","* 279,821","223,900","183,705","2,491",Sindhulimadhi,H,Janakpur
+Sindhupalchok,NP.MM.SP,"287798","* 305,857","261,025","232,326","2,542",Chautara,M,Bagmati
+Siraha,NP.PW.SR,"637328","* 572,399","460,746","375,358","1,188",Siraha,T,Sagarmatha
+Solukhumbu,NP.PW.SO,"105886","107,686","97,200","88,245","3,312",Salleri,M,Sagarmatha
+Sunsari,NP.PW.SN,"763487","625,633","463,481","344,594","1,257",Phidim,T,Kosi
+Surkhet,NP.MP.SU,"350804","* 288,527","225,768","166,196","2,451",Birendranagar,H,Bheri
+Syangja,NP.PM.SY,"289148","317,320","293,526","271,824","1,164",Syangja,H,Gandaki
+Tanahu,NP.PM.TN,"323288","315,237","268,073","223,438","1,546",Damauli,H,Gandaki
+Taplejung,NP.PW.TP,"127461","134,698","120,053","120,780","3,646",Taplejung,M,Mechi
+Terhathum,NP.PW.TR,"101577","113,111","102,870","92,454",679,Terhathum,H,Kosi
+Udayapur,NP.PW.UD,"317532","287,689","221,256","159,805","2,063",Gaighat,H,Sagarmatha

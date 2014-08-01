@@ -1,0 +1,29 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+.navbar-inverse {
+	background-image: linear-gradient(to bottom, #222222 0%, #222222 100%);
+	/*margin-bottom: -50px;*/
+}
+
+body {
+	background: #383838;
+}
+
+footer {
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+

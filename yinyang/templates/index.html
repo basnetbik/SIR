@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        {% load static from staticfiles %}
+
+        <link rel="stylesheet" href="{%static "css/bootstrap.min.css"%}">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+            #map {
+                margin-top: 40px;
+                height: 500px;
+            }
+            .info {
+                padding: 6px 8px;
+                font: 14px/16px Arial, Helvetica, sans-serif;
+                background: white;
+                background: rgba(255,255,255,0.8);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+            .info h4 {
+                margin: 0 0 5px;
+                color: #777;
+            }
+        </style>
+        <link rel="stylesheet" href="{%static "css/bootstrap-theme.css"%}">
+        <link rel="stylesheet" href="{%static "css/main.css"%}">
+        <link rel="stylesheet" href="{%static "leaflet/leaflet.css"%}" />
+        <script src="{%static "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"%}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><font size=5px>EPIDEMIC OUTBURST PATTERN</font><br><font color="white" size=2px>Study of Patterns of Epidemic Spread In Context of Nepal</font></a><br>
+          
+        </div>
+      </div>
+    </div>
+
+    <a name="map1"></a>
+    <div style = "background:#ababab; padding-bottom:55px; padding-top:60px">      
+    <div class="container">
+      <!-- Example row of columns -->
+      <form method="post">
+      {% csrf_token %}
+      	<select name="epidemic">
+      		<option value="swine_flu">swine flu</option>
+      		<option value="cholera">cholera</option>
+      		<option value="HIV">HIV</option>
+      	</select>
+      	<input list="districts" name="district" placeholder = "District">
+			<datalist id="districts">
+				{% for district in districts %}
+    		    	<option value= "{{district}}">
+    			{% endfor %}
+    		</datalist>
+    	<input type="text" name="infected" placeholder="Infected #" >
+      <input type="text" name="vaccinated"  placeholder="Vaccinated #">
+      	<input type="submit" value="submit">
+      </form>
+      vaccinated: <b>{{vaccinated}}</b> &nbsp;&nbsp;&nbsp;infected: <b>{{infected}}</b>&nbsp;&nbsp;&nbsp; epidemic name: <b>{{epidemic_name}}</b>
+      <div class="row">
+        <div class="colg-lg-12">
+            <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <p style = "margin-left: 20px"><a href="#graph"><img src="{%static "img/down.png"%}" style="height:40px; width:40px"></a></p>
+  </div>
+
+  <a name="graph" ></a>
+  <div style = "background:#abb278; padding-top:90px; padding-bottom: 90px">
+      <p style = "margin-left: 20px"><a href="#map1"><img src="{%static "img/up.png"%}" style="height:40px; width:40px"></a></p>
+      <div class="container">
+        <div class="row">
+          <!-- <img src = "{%static "img/graph.png"%}" style = "display:block; margin-left: auto; margin-right:auto;"> -->
+          <div style = "display:block; margin-left: auto; margin-right:auto;">
+            <div style="float:left">
+            <div id='movie'></div>
+          </div>
+          <div style="float:right">
+            <button id='play'>play</button>
+            <button id='stop'>stop</button>
+            <button id='pause'>pause</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <p style = "margin-left: 20px"><a href="#map2"><img src="{%static "img/down.png"%}" style="height:40px; width:40px"></a></p>
+  </div>
+
+          <!-- <hr> -->
+
+      <footer>
+        <p style = "padding-top: 20px; padding-left:20px"><!--&copy;-->   
+        <img src = "{%static 'img/yinyang.png'%}" height = 20px widht = 20px> | YIN-YANG
+      </p>
+      </footer>
+    </div>
+     <script>window.jQuery || document.write('<script src="{%static "js/vendor/jquery-1.10.1.min.js"%}"><\/script>')</script>
+     <script src="{%static "js/vendor/bootstrap.min.js"%}"></script>
+     <script src="{%static "leaflet/leaflet.js"%}"></script>
+     <script src="{%static "js/districts.js"%}"></script>
+     <script src="{%static "data.js"%}"></script>
+     <script src="{%static "js/main.js"%}"></script>
+      <script src="{%static 'jquery.jsmovie.1.4.4.min.js'%}"></script>
+
+
+         <script type="text/javascript" >
+          
+          $(document).ready(function(){
+
+    $('#movie').jsMovie({
+        sequence: 'graph##.png',
+        from: 1,
+        to: 19,
+        folder : "{%static 'img/'%}",
+        height:600,
+        width:1000,
+        fps:2
+        // loader: {path:"img/preloader.png",height:50,width:50,rows:2,columns:4},        
+    });
+
+    $('#play').click(function(){
+        $('#movie').jsMovie('play');
+    });
+
+    $('#stop').click(function(){
+        $('#movie').jsMovie('stop');
+    });
+
+    $('#pause').click(function(){
+        $('#movie').jsMovie('pause');
+    });
+
+});
+
+        </script>
+     </body>
+</html>
